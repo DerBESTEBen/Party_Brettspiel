@@ -1,0 +1,39 @@
+/* Popup für Regelwerk */
+.modal {
+    display: none;
+    background-color: rgb(155, 175, 126); /* Hintergrund leicht transparent */
+    z-index: 1000; /* Popup bleibt über dem Menü */
+    display: fixed;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Statt fixed, absolute zur Vermeidung von Fixierung */
+    width: 80%; /* Popup nimmt nicht die gesamte Breite ein */
+    height: auto;
+    max-width: 600px; /* Begrenzte Breite */
+    top: 20px; /* Abstand von oben */
+    left: 50%;
+    transform: translateX(-50%); /* Popup mittig ausrichten */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Inhalt des Popups */
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1001; /* Popup liegt über dem Overlay */
+    width: 100%;
+}
+
+/* Schließen-Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+}
